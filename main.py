@@ -9,4 +9,8 @@ app = FastAPI(
     version="1.0.0"
 )
 
+@app.get("/")
+def root():
+    return {"status": "ok"}
+
 app.include_router(error_router)
