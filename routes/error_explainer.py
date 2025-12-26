@@ -1,6 +1,8 @@
 from fastapi import APIRouter
-from backend.schemas.error_schema import ErrorRequest, ErrorResponse
-from backend.services.ai_service import explain_error
+# from backend.schemas.error_schema import ErrorRequest, ErrorResponse
+# from backend.services.ai_service import explain_error
+from schemas.error_schema import ErrorRequest, ErrorResponse
+from services.ai_service import explain_error
 
 router = APIRouter()
 
